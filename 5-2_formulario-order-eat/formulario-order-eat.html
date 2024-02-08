@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario-order-eat.css">
+    <title>Order eat!</title>
+</head>
+<body>
+
+<div class="principal-container">
+<form action="recived.html" method="get">
+
+    <div class="tipo-pedido">
+    <h3>¿Cómo te gustaria hacer tu pedido?</h3>
+
+    <div class="radio">
+        <input type="radio" id="recogida" name="type" value="recogida">
+        <label for="recogida">Recogida</label>
+        <input type="radio" id="entrega" name="type" value="entrega">
+        <label for="entrega">Entrega</label>
+    </div>
+
+    <!-- para que se deseleccione el otro al que est aseleccionado, se tiene que poner el mismo name. value es el contenido -->
+
+    <label for="person">Selecciona una opción:</label>
+    <select name="person" id="person">
+        <option value="sra">Sra.</option>
+        <option value="sr">Sr.</option>
+    </select>
+
+    <label for="names">Nombre: *</label>
+    <input type="text" id="names" name="names" required>
+
+    <label for="mobile">Número de móvil: *</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="+34 000 000 000" required maxlength="15">
+
+    <label for="time">Hora de entrega/recogida:</label>
+    <select name="time" id="time">
+        <option value="20:30">Lo antes posible (20:30)</option>
+        <option value="20:35">20:35</option>
+        <option value="20:40">20:40</option>
+        <option value="20:45">20:45</option>
+        <option value="20:50">20:50</option>
+        <option value="20:55">20:55</option>
+        <option value="21:00">21:00</option>
+        <option value="21:05">21:05</option>
+        <option value="21:10">21:10</option>
+        <option value="21:15">21:15</option>
+    </select>
+    </div>
+
+    <div class="imagen">
+        <img src="IMG/PIZZA.png" alt="pizza">
+    </div>
+
+    <div class="pizza">
+    <h3>Elige tu mediana favorita!</h3>
+
+    <label for="pizzas">Selecciona tus pizzas:</label>
+    <select name="pizzas" id="pizzas">
+        <option value="gusto">A tu gusto</option>
+        <option value="pepperoni">Pepperoni</option>
+        <option value="quesos">4 quesos</option>
+        <option value="margarita">Margarita</option>
+        <option value="carbonara">Carbonara</option>
+        <option value="bacon">Bacon Crispy</option>
+        <option value="barbacoa">Barbacoa</option>
+    </select>
+
+    <div class="ingredientes">
+        
+        <label for="ingredientes-extra">Selecciona tus ingredientes extra!</label>
+        
+        <input type="checkbox" id="ingrediente1" name="ingrediente1" value="Cebolla">
+        <label for="ingrediente1">Cebolla</label>
+        
+        <input type="checkbox" id="ingrediente2" name="ingrediente2" value="Bacon">
+        <label for="ingrediente2">Bacon</label>
+        
+        <input type="checkbox" id="ingrediente3" name="ingrediente3" value="Queso">
+        <label for="ingrediente3">Queso</label>
+        
+        <input type="checkbox" name="none" id="none">
+        <label for="none">No quiero ingrediente extra.</label>
+
+    </div>
+
+    <label for="not-cheese" id="label-not-cheese">¿No te gusta el queso? Tienes mal gusto, pero escribelo aquí si se da el caso:</label>
+    <textarea name="not-cheese" id="not-cheese" cols="30" rows="10" maxlength="180"></textarea>
+
+    <input type="submit">
+
+    </div>
+</form>
+
+</div>
+    
+</body>
+</html>

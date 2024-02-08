@@ -1,0 +1,112 @@
+body{
+    background-color: red;
+}
+
+.principal-container{
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(175, 8, 8);
+    border-width: 2px;
+    width: 1000px;
+    position: relative;
+    height: 1000px;
+}
+
+.radio{
+    width: 200px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.tipo-pedido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    input, select, label{
+      width: 190px;
+      margin-top: 20px;  
+    }
+}
+
+#person{
+    width: 50px;
+}
+
+#mobile{
+    width: 130px;
+}
+
+img{
+    max-width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+}
+
+.pizza{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    input, select, label{
+        width: 190px;
+        margin-top: 20px;  
+      }
+}
+
+#pizzas{
+    width: 100px;
+}
+
+.ingredientes{
+    
+    flex-direction: column;
+    justify-content: center;
+    input{
+        width: 50px;
+    }
+}
+
+h3, label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: x-large;
+    color: rgb(158, 20, 20);
+}
+
+#label-not-cheese{
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+a{
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    text-decoration: none;
+    background-color: red ;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    &:hover{
+        border-style: solid;
+        border-color: rgb(158, 20, 20);
+    }
+}
